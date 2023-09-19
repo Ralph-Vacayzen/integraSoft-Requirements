@@ -1,4 +1,2 @@
 Requirement,Description
-Utilization-based adjustment,Adjust pricing at utilization benchmarks
 Date-range-based adjustment,Adjust pricing at date-range benchmarks
-Percentage or flat-rate adjustment, Adjustment can be a percentage of base rate or a new rate
