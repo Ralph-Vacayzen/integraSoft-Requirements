@@ -1,0 +1,5 @@
+Requirement,Description
+Inventory Separation Between Locations,Each location has its own inventory
+Optional Inventory Sharing Between Locations,Locations can share inventory
+Inventory Movement Between Locations,Activity orgin and destination are locations
+Geofence-based Servicing,Delivery location depicts servicing location
