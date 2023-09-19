@@ -5,8 +5,8 @@ import numpy as np
 st.set_page_config(page_title='Requirement - Dynamic Pricing',page_icon='images/icon.png',layout='centered',initial_sidebar_state='expanded')
 
 st.caption('REQUIREMENT')
-st.header('DYNAMIC PRICING')
-st.info('Vacayzen requires a solution for demand-based pricing.')
+st.header('Dynamic Pricing')
+st.info('Vacayzen requires a solution for dynamic, adjustable pricing.')
 
 st.subheader('Objectives')
 st.write('- [REQUIRED] Adjust asset pricing on a per-day basis, with percentage adjustment')
