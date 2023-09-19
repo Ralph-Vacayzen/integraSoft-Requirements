@@ -5,10 +5,10 @@ import pandas as pd
 # import streamlit_pydantic as sp
 
 
-st.set_page_config(page_title='Requirement - Reporting',page_icon='images/icon.png',layout='centered',initial_sidebar_state='expanded')
+st.set_page_config(page_title='Reporting',page_icon='images/icon.png',layout='centered',initial_sidebar_state='expanded')
 
 st.caption('REQUIREMENT')
-st.header('REPORTING')
+st.header('Reporting')
 st.info('Vacayzen requires a solution for reports on revenue and operational activity.')
 
 st.subheader('Objectives')

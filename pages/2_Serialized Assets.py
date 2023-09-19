@@ -5,10 +5,10 @@ import pandas as pd
 # import streamlit_pydantic as sp
 
 
-st.set_page_config(page_title='Requirement - Serialized Assets',page_icon='images/icon.png',layout='centered',initial_sidebar_state='expanded')
+st.set_page_config(page_title='Serialized Assets',page_icon='images/icon.png',layout='centered',initial_sidebar_state='expanded')
 
 st.caption('REQUIREMENT')
-st.header('SERIALIZED ASSETS')
+st.header('Serialized Assets')
 st.info('Vacayzen requires a solution for serialized inventory with tracking capabilities.')
 
 st.subheader('Objectives')

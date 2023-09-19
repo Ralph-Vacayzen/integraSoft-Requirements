@@ -2,20 +2,19 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 
-st.set_page_config(page_title='Requirement - Dynamic Pricing',page_icon='images/icon.png',layout='centered',initial_sidebar_state='expanded')
+st.set_page_config(page_title='Dynamic Pricing',page_icon='images/icon.png',layout='centered',initial_sidebar_state='expanded')
 
 st.caption('REQUIREMENT')
 st.header('Dynamic Pricing')
 st.info('Vacayzen requires a solution for dynamic, adjustable pricing.')
 
 st.subheader('Objectives')
-st.write('- [REQUIRED] Adjust asset pricing on a per-day basis, with percentage adjustment')
-st.write('- [REQUIRED] Incentivize off-season sales')
-st.write('- [REQUIRED] Capitalize on peak-season trends')
-st.write('- [OPTIONAL] Capitalize on demand')
+st.write('- Adjust asset pricing on a per-day basis, with percentage adjustment')
+st.write('- Incentivize off-season sales')
+st.write('- Capitalize on peak-season trends')
 
 st.subheader('Scope')
-st.write('Similar to hotels or flights, pricing should adjust based on time-of-year need and availability.')
+st.write('Similar to hotels or flights, pricing should be adjustable based on time-of-year need and availability.')
 
 st.subheader('Requirements')
 r = pd.read_csv('data/dynamic_pricing/requirements.csv').fillna('')
@@ -32,7 +31,7 @@ with st.expander('Assumptions'):
     st.caption('Assume at least one asset category exists.')
     st.caption('Assume at least one asset exists per category.')
     st.caption('Assume an asset has one daily rate.')
-    st.caption('What follows in an example of one asset in one category.')
+    st.caption('What follows is an ambiguous asset in one category.')
 
 left, middle, right = st.columns(3)
 category         = left.selectbox('Category', categories, 0)
