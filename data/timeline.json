@@ -6,41 +6,11 @@
           "credit": ""
         },
         "text": {
-          "headline": "TECHNOLOGY<br>Timeline",
-          "text": "A timeline for Vacayzen's tech roadmap.<br>Improve Vacayzen and get TOS out of OPS."
+          "headline": "REQUIREMENTS<br>Timeline",
+          "text": "A timeline for Vacayzen's integraSoft Requirements."
         }
     },
     "events": [
-      {
-        "media": {
-          "url": "https://media-cldnry.s-nbcnews.com/image/upload/newscms/2020_14/1554952/hank-shake-continue-today-main-200403.jpg",
-          "caption": ""
-        },
-        "start_date": {
-          "year": "2023",
-          "month": "9",
-          "day": "7"
-        },
-        "text": {
-          "headline": "integraSoft<br>On-Site Visit",
-          "text": "Discuss contract renewal terms during an on-site visit."
-        }
-      },
-      {
-        "media": {
-          "url": "https://i.imgflip.com/5yt6g8.png?a470256",
-          "caption": ""
-        },
-        "start_date": {
-          "year": "2023",
-          "month":"10",
-          "day":"1"
-        },
-        "text": {
-          "headline": "Ralph's<br>Billing Engine",
-          "text": "Begin use of the Vacayzen Billing Engine."
-        }
-      },
       {
         "media": {
           "url": "https://cdn.shopify.com/shopifycloud/help/assets/manual/sell-in-person/hardware/barcode-scanner/1d-barcode-4fbf513f48675746ba39d9ea5078f377e5e1bb9de2966336088af8394b893b78.png",
@@ -53,22 +23,7 @@
         },
         "text": {
           "headline": "Serialized<br>Assets",
-          "text": "There should be the capacity for serialized assets."
-        }
-      },
-      {
-        "media": {
-          "url": "https://images.idgesg.net/images/idge/imported/imageapi/2022/06/21/16/cso_nw_cloud_computing_cloud_network_circuits_by_denis_isakov_gettyimages-966932508_2400x1600-100814451-large-100929305-large.jpg?auto=webp&quality=85,70",
-          "caption": ""
-        },
-        "start_date": {
-          "year": "2023",
-          "month":"11",
-          "day":"1"
-        },
-        "text": {
-          "headline": "Establish<br>Internal Shared Drive",
-          "text": "There should be an operating network-based storage solution."
+          "text": "There should be the capacity for serialized assets in integraRental and VacaDo."
         }
       },
       {
@@ -99,56 +54,6 @@
         "text": {
           "headline": "Improve<br>Reporting",
           "text": "There should be improved reporting on:<br>daily sales, deferred revenue, and transactions."
-        }
-      },
-      {
-        "media": {
-          "url": "https://www.scnsoft.com/_default_upload_bucket/protecting-intranet-security.png",
-          "caption": ""
-        },
-        "start_date": {
-          "year": "2024",
-          "month":"2",
-          "day":"1"
-        },
-        "text": {
-          "headline": "Establish<br>Internal Website",
-          "text": "There should be an operating internal website for employee use."
-        }
-      },
-      {
-        "media": {
-          "url": "https://miro.com/blog/wp-content/uploads/2021/02/Interactive-Workshop-Activities-for-Virtual-Collaboration-Copy.png",
-          "caption": ""
-        },
-        "start_date": {
-          "year": "2024",
-          "month":"2",
-          "day":"1"
-        },
-        "text": {
-          "headline": "Improve<br>Website Management",
-          "text": "There should be improved website editing on<br>front-facing and ecommerce websites."
-        }
-      },
-      {
-        "media": {
-          "url": "https://cdn.dribbble.com/users/10971/screenshots/17499677/media/61e491fb375dba0e486c0d6a28537827.png?resize=400x0",
-          "caption": ""
-        },
-        "start_date": {
-          "year": "2024",
-          "month":"1",
-          "day":"1"
-        },
-        "end_date": {
-          "year": "2024",
-          "month":"12",
-          "day":"31"
-        },
-        "text": {
-          "headline": "Improve<br>Org Documentation",
-          "text": "There should be KPIs defined and working for:<br>Human Resources, Sales, Marketing, and Operations"
         }
       }
     ]
