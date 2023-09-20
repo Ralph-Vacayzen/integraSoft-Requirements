@@ -33,8 +33,17 @@ st.download_button('Download Requirements',pd.read_csv('data/serialized_assets/r
 
 st.divider()
 
-st.subheader('Example Workflow')
+st.subheader('Examples of Adjustments')
+st.write('')
 
-left, right = st.columns(2)
-st.write()
-left.image('data/serialized_assets/images/IMG_6036.PNG')
+st.write('**RELEASE TO LOAD**')
+with st.container():
+    left, right = st.columns(2)
+    left.write('When a route has been set to a status of Release to Load, there should be an option to "Load Selected Route," similar to "Download Selected Route," found on the Sync Data > Download Route screen. "Download Selected Route" should be grayed out.')
+    left.write('')
+    left.write('"Load Selected Route" should utilize the data that produces the load sheets, to determine what assets should be scanned on to the truck.')
+    left.write('')
+    left.write('There should be a means to communicate a conflict. If there is not an asset that is needed for the route, the associated order\'s dispatch activities should be removed from the route and placed back onto RAB. A loading conflict should be recorded.')
+    left.write('')
+    left.write('There should be a means to complete a "Load Selected Route" event. Once a "Load Selected Route" event has been successfully completed, the route status should be change to "Release to Begin." "Download Selected Route" should no longer be grayed out.')
+    right.image('data/serialized_assets/images/IMG_6038.PNG')
