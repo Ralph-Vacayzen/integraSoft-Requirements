@@ -14,7 +14,7 @@ st.write('- Incentivize off-season sales')
 st.write('- Capitalize on peak-season trends')
 
 st.subheader('Scope')
-st.write('Similar to hotels or flights, pricing should be adjustable based on time-of-year need and availability.')
+st.write('Pricing should be adjustable based on configurable date ranges and percentages.')
 
 st.subheader('Requirements')
 r = pd.read_csv('data/dynamic_pricing/requirements.csv').fillna('')
@@ -30,8 +30,7 @@ st.subheader('Asset Price Settings')
 with st.expander('Assumptions'):
     st.caption('Assume at least one asset category exists.')
     st.caption('Assume at least one asset exists per category.')
-    st.caption('Assume an asset has one daily rate.')
-    st.caption('What follows is an ambiguous asset in one category.')
+    st.caption('Assume an asset has one, daily rate.')
 
 left, middle, right = st.columns(3)
 category         = left.selectbox('Category', categories, 0)
@@ -41,7 +40,7 @@ minimum_duration = right.number_input('Minimum Duration', min_value=0, step=1, v
 st.divider()
 
 st.subheader('Dynamic Price Settings')
-with st.expander('Assumptions'):
+with st.expander('Specifications'):
     st.caption('There can be any number of dynamic ranges.')
     st.caption('Dynamic ranges cannot overlap, where they share an applicable category.')
     st.caption('Dynamic ranges can adjust by a positive or negative percentage.')
