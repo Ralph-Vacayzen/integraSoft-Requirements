@@ -45,5 +45,50 @@ with st.container():
     left.write('')
     left.write('There should be a means to communicate a conflict. If there is not an asset that is needed for the route, the associated order\'s dispatch activities should be removed from the route and placed back onto RAB. A loading conflict should be recorded.')
     left.write('')
+    left.write('Load conflicts can be reviewed in integraRental at: Disptach > Route > {Route} > Load Conflicts. There should be a count of load conflicts on the table of routes, located in integraRental at: Dispatch > Route.')
+    left.write('')
     left.write('There should be a means to complete a "Load Selected Route" event. Once a "Load Selected Route" event has been successfully completed, the route status should be change to "Release to Begin." "Download Selected Route" should no longer be grayed out.')
     right.image('data/serialized_assets/images/IMG_6038.PNG')
+
+
+st.write('')
+st.write('')
+st.write('**ABANDONED ITEMS**')
+with st.container():
+    left, right = st.columns(2)
+    left.write('Often a driver comes across an asset that has been abandoned. The "Load Sheet" button, found on the "Dispatch Activity" screen in VacaDo, should be replaced with "Abandoned Item."')
+    left.write('')
+    left.write('A driver sees an abandoned asset. They click "Abandoned Asset." They scan the asset. They indicate if they picked up the asset or not. If not, the scan also captures the latitude and longitude. The results are added to a log at the end of a sync or full sync with: asset, applicable order, picked-up-or-not, latitude, longitude.')
+    left.write('')
+    left.write('The abandoned log can be viewed via Dispatch > Route > {Route} > Abandoned Items. There should be a count of abandoned items on the table of routes, located in integraRental at: Dispatch > Route.')
+    left.write('')
+    left.write('A route reviewer would be responsible for situating the abandoned items log, and scheduling any followup actions required.')
+
+    right.image('data/serialized_assets/images/IMG_6040.PNG')
+
+
+st.write('')
+st.write('')
+st.write('**DELIVERY**')
+with st.container():
+    left, right = st.columns(2)
+
+    right.image('data/serialized_assets/images/IMG_6043.PNG')
+
+
+st.write('')
+st.write('')
+st.write('**PICKUP**')
+with st.container():
+    left, right = st.columns(2)
+
+    right.image('data/serialized_assets/images/IMG_6049.PNG')
+
+
+st.write('')
+st.write('')
+st.write('**SERVICE ITEM**')
+with st.container():
+    left, right = st.columns(2)
+
+    right.image('data/serialized_assets/images/IMG_6041.PNG')
