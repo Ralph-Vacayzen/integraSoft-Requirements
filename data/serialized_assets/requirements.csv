@@ -1,14 +1,10 @@
 Requirement,Description
-Scan via Barcode,"Each asset should have a barcode. There should be a scan for any movement of the asset. When moving an item to a new Storage Location there should be a scan to indicate Storage Location and then subsequenct scans to associate each asset to said Storage Location."
-Storage Locations,"Any place in which inventory can be. Examples: Warehouse, Truck, Inspection, FixIt, Broken, Rental properties. Each location has an inventory and a FixIt."
-FixIt,"A to-do list for each Storage Location. For example, a manager assigns maintenance tasks to an asset, that task is associated to the relevant Storage Location's FixIt to be done. Items on a FixIt can be signed of as complete. Who, when, and what was needed to complete should be recorded."
-Physical Movement,"We must know where each asset is physically."
+Serialization,Each asset should have a unique identifier.
+Scans,"There should be a scan for any movement of the asset. When moving an item from a location to a truck or from a truck to a location, there should be a scan."
+Physical Movement,We must know where each asset is physically.
 Order-based Movement,"We must know which order is currently in possession of assets, and which orders have been in possession of assets previously."
-Quality by Grade,"1 - 5 star. User-decided at the time of quality scan. Internal use only. 5-star: brand new. 4-star: looks good, no issues. 3-star: has a on-site-fixable issue. 2-star: has a off-site-fixable issue. 1-star: needs a full tune, so it comes back to warehouse and is placed in the FixIt pile. 0-star: needs the be decommissioned, so it comes back to warehouse and is placed in the broken pile."
-Lifespan,"Determined by actual age of item in conjunction with uses. Loss is considered in lifespan."
-Different Views,"Not everyone is privy to all information, so different levels of views are necessary. Examples: Admin, Warehouse, Truck, Inspection, FixIt, Broken."
-Maintenance Tracking,"Every maintenance activity should be associated to the individual asset. These maintenance activities should be reportable back to the associated orders and therefore customers."
-Maintenance Needs,"Scan asset. Choose maintenance task to be done on asset. Maintance task is added to FixIt or routes. Whether it is added to the Storage Location's FixIt or routes is a toggle setting per Storage Location. Default toggle option is: to routes. Should be able to choose multiple assets at a time, and assign the same maintenance task to be done on each of them at one time."
-Parts Tracking,"FixIt parts need to be considered and tracked. A maintenance task on an asset has a suggested part or parts. If there is a need for more parts than available, there is a notification to admins."
-Scanned-based Activity Creation,"Scanning assets can produce subsequent tasks to be performed. If a bike is missing at a bike check, schedule a replacement and add a lost item fee to the applicable order. If at a bike check a bike is present that should not be, schedule a drop for where it should be. If the correct number of bikes are present at a bike check, but the serials are different, update the serials to be what is currently present, and schedule a check at the property where the serial is supposed to be."
-Reporting,"FixIt, Projected Budget based on Lifespan Expiration, Maintenance Tasks to Customer, Asset Current Location"
+Lifespan,Determined by actual age of item in conjunction with uses. Loss is considered in lifespan.
+Maintenance Tracking,Every maintenance activity should be associated to the individual asset. These maintenance activities should be reportable back to the associated orders and therefore customers.
+Maintenance Done,"Scan asset. Select the parts replaced. Select the time on site. Move one. The parts used and labor is made into a service ticket and can be attributed to the: asset, order, and customer. Mr. Brady coined it, ""Service Ticket Lite."""
+Abandoned Asset Scan Log,"A driver sees an abandoned asset. They scan the asset. They indicate if they picked up the asset or not. If not, the scan also captures the latitude and longitude. The results are added to a log at the end of a sync or full sync with: asset, applicable order, picked-up-or-not, latitude, longitude. The log can be viewed via Dispatch > Route > {Route} > Abandoned Items."
+Reporting,"Projected Budget based on Lifespan Expiration, Maintenance Tasks to Customer, Asset Current Location, Abandoned Items"
