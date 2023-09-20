@@ -1,4 +1,4 @@
 Requirement,Description
 Daily Sales,"There should be a report that takes in a date range, and provides the sales that occurred per Quickbooks relationship, for each date in the date range."
 Deferred Revenue,"There should be a report that conveys deferred revenue into assets and their Quickbooks relationship, for each date of revenue recognition."
-Transaction Receipts,"Each transaction should have a receipt that inidcates what constituted the calculation for the amount at which the card to be swiped."
+Transaction Receipts,Each transaction should have a receipt that inidcates what constituted the calculation for the amount at which the card was swiped.
