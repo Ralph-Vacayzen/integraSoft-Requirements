@@ -17,7 +17,7 @@ st.write('- Deferred Revenue')
 st.write('- Itemized Receipts Per Transaction')
 
 st.subheader('Scope')
-st.write('Vacayzen should be able to have insight on its: sales, money, and transactions.')
+st.write('Reporting should be day-by-day. Daily revenue and utilization by asset. Reports should be exportable from integraRental and not limited to a manual Microsoft Access export.')
 
 st.subheader('Requirements')
 r = pd.read_csv('data/reporting/requirements.csv').fillna('')

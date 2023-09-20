@@ -24,7 +24,7 @@ right.write('- Determine lifespan of asset')
 
 
 st.subheader('Scope')
-st.write('Vacayzen should be able to track inventory movement and lifespan to facilitate decision making and receive reimbursement for lost items.')
+st.write('All inventory should be serialized and tracked, during each stage of the order process. The current location of each asset should be known, in addition to all past locations. The lifespan of each asset should also be maintained. If assets are lost, there should be means to relocate or charge the appicable customer for lost goods.')
 
 st.subheader('Requirements')
 r = pd.read_csv('data/serialized_assets/requirements.csv', index_col='Requirement').fillna('')

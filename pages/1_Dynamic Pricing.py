@@ -14,7 +14,7 @@ st.write('- Incentivize off-season sales')
 st.write('- Capitalize on peak-season trends')
 
 st.subheader('Scope')
-st.write('Pricing should be adjustable based on configurable date ranges and percentages.')
+st.write('Pricing should be adjustable by date range. During a period of slowness, there should be an adjustable percentage of automatic discount. During a period of demand, there should be an adjustable percentage of automatic increase. During a period of normality, pricing should be unadjusted. Pricing and reporting should reflect the adjustments. Periods should be user defineable and adjustable.')
 
 st.subheader('Requirements')
 r = pd.read_csv('data/dynamic_pricing/requirements.csv').fillna('')
