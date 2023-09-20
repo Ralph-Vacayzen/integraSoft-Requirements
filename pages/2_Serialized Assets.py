@@ -33,4 +33,8 @@ st.download_button('Download Requirements',pd.read_csv('data/serialized_assets/r
 
 st.divider()
 
-st.subheader('Example')
+st.subheader('Example Workflow')
+
+left, right = st.columns(2)
+st.write()
+left.image('data/serialized_assets/images/IMG_6036.PNG')
