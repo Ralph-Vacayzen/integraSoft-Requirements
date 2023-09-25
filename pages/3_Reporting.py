@@ -25,56 +25,42 @@ st.table(r)
 
 st.divider()
 
-st.subheader('Example - Stories')
+st.subheader('Example Report - Stories')
 st.caption('Non-functioning, visual example')
+
+with st.expander('Specifications'):
+    st.caption('Asset Category is **required**.')
+    st.caption('Asset Master is optional.')
+    st.caption('Range Start Date is **required**.')
+    st.caption('Range End Date is **required**.')
+
+with st.expander('Assumptions'):
+    st.caption('If an Asset Master **is not** selected, it is assumed the information is requested for the entire Asset Category.')
+    st.caption('If an Asset Master **is** selected, it is assumed the information is requested for the one Asset Master.')
+
+with st.expander('Columns'):
+    st.caption('Date')
+    st.caption('That date\'s dynamic price (if Asset Master provided)')
+    st.caption('That date\'s number of units sold.')
+    st.caption('The date\'s revenue.')
+
 left, right = st.columns(2)
-start = left.date_input('Start of Range')
-end   = right.date_input('End of Range', value=start+pd.Timedelta(days=1))
+category = left.selectbox('Asset Category',['Bike','Beach Gear','Baby','Golf Cart','Beach Service'])
+asset = right.selectbox('Asset Master',['26" Bike Rental','24" Bike Rental','20" Bike Rental','16" Bike Rental','26" Bike with Baby Seat Rental'])
+start = left.date_input('Range Start Date', value=pd.to_datetime('06/30/2024'))
+end   = right.date_input('Range End Date', value=pd.to_datetime('07/07/2024'), min_value=start)
 
 data = [
-    ['Bikes',17500,18230],
-    ['Beach',12100,13000],
-    ['Baby',5000,4750],
-    ['Bonfire',6000,7200],
-    ['LSV',15000,20000]
+    ['June 30, 2024',10,90,900],
+    ['July 01, 2024',11,100,1100],
+    ['July 02, 2024',11,100,1100],
+    ['July 03, 2024',12,120,1440],
+    ['July 04, 2024',12,120,1440],
+    ['July 05, 2024',11,100,1100],
+    ['July 06, 2024',10,100,1000],
+    ['July 07, 2024',10,90,900],
 ]
 
-data = pd.DataFrame(data,columns=['Quickbooks Relationship','Day 1 of Range','Day 2 of Range'])
-
-st.dataframe(data, use_container_width=True)
-
-
-st.subheader('Example - Deferred Revenue')
-st.caption('Non-functioning, visual example')
-
-data = [
-    ['26" Bike','Bikes',1000,560],
-    ['24" Bike','Bikes',820,700],
-    ['Classic Beach Service','Beach',2000,850],
-    ['Full-size Crib','Baby',300,530],
-    ['Car Seat','Baby',120,200],
-    ['Deluxe Bonfire','Bonfire',2950,2220],
-    ['4-Seat Golf Cart','LSV',4270,2725],
-    ['6-Seat Golf Cart','LSV',3390,5230],
-]
-
-data = pd.DataFrame(data,columns=['Asset','Quickbooks Relationship','Revenue Recognized Date 1','Revenue Recognized Date 2'])
-
-st.dataframe(data, use_container_width=True)
-
-
-st.subheader('Example - Transaction Receipt')
-st.caption('Non-functioning, visual example')
-
-st.metric('Transaction','$205.98')
-
-data = [
-    ['26" Bike','Bikes',175],
-    ['Damage Waiver','Fee',8.75],
-    ['Flexible Cancellation','Fee',8.75],
-    ['Sales Tax','Tax',13.48],
-]
-
-data = pd.DataFrame(data,columns=['Description','Quickbooks Relationship','Amount'])
+data = pd.DataFrame(data,columns=['Date','Dynamic Price ($)','Units (#)','Revenue ($)'])
 
 st.dataframe(data, use_container_width=True)
