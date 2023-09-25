@@ -18,7 +18,7 @@ right.write('- Introduce date-based, dynamic pricing')
 right.write('- Introduce by-day pricing & reporting')
 
 
-st.subheader('Project scope')
+st.subheader('Project scope - Epic Level')
 st.caption('Dynamic Pricing')
 st.write('Pricing should be adjustable by date range. During a period of slowness, there should be an adjustable percentage of automatic discount. During a period of demand, there should be an adjustable percentage of automatic increase. During a period of normality, pricing should be unadjusted. Pricing and reporting should reflect the adjustments. Periods should be user defineable and adjustable.')
 st.caption('Reporting')
@@ -26,7 +26,7 @@ st.write('Reporting should be day-by-day. Daily revenue and utilization by asset
 st.caption('Serialized Inventory')
 st.write('All inventory should be serialized and tracked, during each stage of the order process. The current location of each asset should be known, in addition to all past locations. The lifespan of each asset should also be maintained. If assets are lost, there should be means to relocate or charge the appicable customer for lost goods.')
 
-st.subheader('Business requirements')
+st.subheader('Business requirements - Epic Level')
 br = pd.read_csv('data/summary/requirements.csv').fillna('')
 st.table(br)
 

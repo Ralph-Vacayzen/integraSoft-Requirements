@@ -33,7 +33,7 @@ st.download_button('Download Requirements',pd.read_csv('data/serialized_assets/r
 
 st.divider()
 
-st.subheader('Examples of Adjustments')
+st.subheader('Examples of Adjustments - Stories')
 st.write('')
 
 st.write('**RELEASE TO LOAD**')
@@ -106,6 +106,8 @@ with st.container():
     left.write('')
     left.write('Any scan conflicts, where an asset is supposed to be picked up but is not present for scan, would be sent back to the Route Assignment Board in integraRental. If the missing item is part of a bundle, the bundle will be partitioned on the associated rental agreement. Any scan conflict will be placed back on the Route Assignment Board.')
     left.write('')
+    left.write('In the event that a scan takes places for an asset that should not be present, there should be a pickup conflict recorded. The results are added to a log at the end of a sync or full sync with: asset, applicable order, latitude, longitude. The misplaced asset log can be viewed via Dispatch > Route > {Route} > Misplaced Items. There should be a count of misplaced items on the table of routes, for the applicable route, located in integraRental at: Dispatch > Route.')
+    left.write('')
     left.write('*For example, if a PICKUP was for (4) 26" Bike Rentals, and three of the four were scanned, the rental agreement would have a rental agreement line for (3) 26" Bike Rentals that are picked up and (1) 26" Bike Rental that still needs to be picked up and is sitting on the Route Assignment Board to be scheduled on route.*')
     left.write('')
     left.write('After scanning, there should be a "Complete Dispatch" button, like there is today, and the flow should continue as it does today.')
@@ -124,6 +126,8 @@ with st.container():
     left.write('On the "Dispatch Details" screen for a service item stop in VacaDo, the "Complete Dispatch" button will be replaced with "Service Details."')
     left.write('')
     left.write('The resulting, new screen will prompt for parts used and how many and how long the activity took, and the parts and work should be tied to the individual asset. It will also prompt for a potential swapping or replacement of assets. If a swap did take place, scan-in the old asset and scan-out the new asset. If a replacement did take place, scan-out the new asset, and prompt for indication of the asset that is not present.')
+    left.write('')
+    left.write('In the event that a scan takes places for an asset that should not be present, there should be a pickup conflict recorded. The results are added to a log at the end of a sync or full sync with: asset, applicable order, latitude, longitude. The misplaced asset log can be viewed via Dispatch > Route > {Route} > Misplaced Items. There should be a count of misplaced items on the table of routes, for the applicable route, located in integraRental at: Dispatch > Route.')
     left.write('')
     left.write('After service details have been provided, there should be a "Complete Dispatch" button, like there is today, and the flow should continue as it does today.')
     left.write('')

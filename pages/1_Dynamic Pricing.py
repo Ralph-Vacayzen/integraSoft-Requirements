@@ -22,7 +22,7 @@ st.table(r)
 
 st.divider()
 
-st.header('Example')
+st.header('Example - Stories')
 
 categories = ['Bike','Beach Gear','Beach Service','Baby','Bonfire','Golf Cart']
 

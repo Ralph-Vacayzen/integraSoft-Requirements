@@ -25,7 +25,7 @@ st.table(r)
 
 st.divider()
 
-st.subheader('Example - Daily Sales')
+st.subheader('Example - Stories')
 st.caption('Non-functioning, visual example')
 left, right = st.columns(2)
 start = left.date_input('Start of Range')
